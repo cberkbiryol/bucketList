@@ -34,3 +34,11 @@ h1 {
 .crossed_off {
     text-decoration:line-through
 }
+
+.BLitem:hover {
+    font-size: 2rem;
+}
+
+.form-control{
+    background-color: rgba(239, 245, 164, 0.8);
+}

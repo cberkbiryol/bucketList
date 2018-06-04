@@ -23,10 +23,15 @@ var orm = {
             cb(result)
         })
     },    
-    updateOne: function(tableName,col,val,cond,cb) {
+    updateOne: function(tableName,col,val,cond,cb) {        
+        if (val === "true" || val === "false") {
+            fixedVal = val; 
+        } else {
+            fixedVal = "\"" + val + "\"";
+        }
         var queryString = "UPDATE " + tableName
         queryString += " SET "
-        queryString +=  col + "=" + val
+        queryString +=  col + "=" + fixedVal;
         queryString += " WHERE "
         queryString += cond;
         console.log(queryString);   
