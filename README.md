@@ -7,7 +7,7 @@ This full stack app keeps track of things that a person wants to achieve or expe
 With all the functionallity given above the app 
 1. **Creates enteries:** by add new items to the Bucket list via the form group at the top of the page through the ```/api/blist``` __post__ route.
 2. **Reads the database:** by accessing the database everytime the page loads through the ```/``` __get__ route.
-3. **Updates the database:**by corssing off the items from the bucket list or adding items back to the bucket list as well as changing the text of the list item through the ```/api/blsit/itemID``` __put__ route.
+3. **Updates the database:** by corssing off the items from the bucket list or adding items back to the bucket list as well as changing the text of the list item through the ```/api/blsit/itemID``` __put__ route.
 4. **Deletes the enteries:** by remove button that operates through the ```/api/blsit/itemID``` __delete__ route.
 
 Hence, complete CRUD is carried out in the ORM that handles the database and database functionality.
